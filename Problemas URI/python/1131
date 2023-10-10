@@ -1,0 +1,49 @@
+import sys 
+opcao = int()
+grenais_n = 0
+grenais = []
+gremio = []
+inter = []
+empates = []
+vg = 0
+vi = 0
+em = 0
+gols_inter = 0
+gols_gremio = 0
+
+def gre_nau(gols_inter, gols_gremio,empates, vi, vg, em, grenais_n):
+
+    gols_inter, gols_gremio = map(int, input().split())
+    if gols_inter>gols_gremio:
+        vi += 1
+        inter.append(vi)
+        grenais_n += 1
+        grenais.append(grenais_n)
+    elif gols_gremio>gols_inter:
+        vg += 1
+        gremio.append(vg)
+    elif gols_gremio == gols_inter:
+        em += 1 
+        empates.append(em)
+    return gre_nau
+
+def novo_gren(opcao):
+    while True:
+        opcao = int(input("Novo grenal (1-sim 2-nao)"))
+        if opcao == 1:
+            gre_nau(gols_inter, gols_gremio,empates, vi, vg, em,grenais_n)
+        elif opcao == 2:
+            print(f'{len(grenais)} grenais')
+            print(f'Inter:{len(inter)}')
+            print(f'Gremio:{len(gremio)}')
+            print(f'Empates:{len(empates)}')    
+        sys.exit()
+        
+    return novo_gren(opcao)
+        
+
+
+gre_nau(gols_inter, gols_gremio,empates, vi, vg, em, grenais_n)
+novo_gren(opcao)
+
+

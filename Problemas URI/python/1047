@@ -1,0 +1,13 @@
+hora_i, min_i, hora_f, min_f = map(int, input().split())
+th = int()
+tm = int()
+if hora_i<hora_f:
+    th = hora_f-hora_i
+else: 
+    th = (24-hora_i)+hora_f
+if min_i<min_f:
+    tm = min_f-min_i
+else:
+    tm = (60-min_i)+min_f
+
+print(f'O JOGO DUROU {th} HORA(S) E {tm} MINUTO(S)')

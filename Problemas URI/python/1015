@@ -1,0 +1,8 @@
+import math 
+x1, y1 = map(float, input().split())
+x2, y2 = map(float, input().split())
+soma1 = (x2-x1)**2
+soma2 = (y2-y1)**2
+soma3 = soma1+soma2
+distance = math.sqrt(soma3)
+print('{:.4f}'.format(distance))

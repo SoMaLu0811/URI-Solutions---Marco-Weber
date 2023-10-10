@@ -1,0 +1,15 @@
+n = float(input())
+imposto = float()
+if 0<= n <=2000:
+    print("Isento")
+elif 2000.01<= n <=3000:
+    imposto = n*0.08
+    print("R$ {:.2f}".format(imposto))
+elif 3000.01<= n <=4500:
+    imposto = n*0.18
+    print("R$ {:.2f}".format(imposto))
+elif n>4500:
+    imposto = n*0.28
+    print("R$ {:.2f}".format(imposto))
+    
+    

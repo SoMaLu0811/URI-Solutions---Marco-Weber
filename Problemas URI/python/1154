@@ -1,0 +1,13 @@
+soma = 0
+vezes = 0
+while True:
+    idade = int(input())
+    if idade<0:
+        break 
+    
+    soma += idade
+    vezes += 1
+
+idade_media = soma/vezes
+
+print(f"{idade_media:.2f}")

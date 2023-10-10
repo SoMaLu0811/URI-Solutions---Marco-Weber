@@ -1,0 +1,14 @@
+sum = int()
+n = int()
+lista_p = []
+n = int(0)
+m = int(0)
+m, n = map(int, input().split())
+while n>=0 or m>=0:
+    m, n = map(int, input().split())
+    if n%2 == 0 and m%2 ==0:
+        
+        lista_p.append(n)
+        
+    lista_p.sort
+    print(f'{lista_p} Sum={sum}')

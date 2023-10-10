@@ -1,0 +1,15 @@
+n = float(0)
+media1 = float(0)
+media2 = float()
+div = float()
+lista = []
+for x in range(6):
+    n = float(input())
+    if n>0:
+        lista.append(n)
+        media1 += n
+        div += 1
+
+media2 = media1/div
+print(f'{len(lista)} valores positivos')
+print(media2)

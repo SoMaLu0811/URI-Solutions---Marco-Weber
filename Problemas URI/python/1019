@@ -1,0 +1,8 @@
+n = int(input()) #seconds
+minutos = n//60
+segundos = n%60 
+horas = minutos//60 
+horas2 = horas%60
+minutos2 = minutos%60
+
+print(f'{horas2}:{minutos2}:{segundos}')

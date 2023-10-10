@@ -1,0 +1,6 @@
+pos = 0 
+for x in range(6):
+    nums = float(input())
+    if nums>0:
+        pos+=1
+print(f'{pos} valores positivos')

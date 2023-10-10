@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    
+    int qtd_testes
+    int divispr, flag_primo;
+    long numero;
+    double raiz;
+    
+    scanf("%d, &qtd_testes");
+    
+    
+        
+
+    while (qtd_testes--) {
+        scanf(%d, &numero);
+
+        raiz = sqrt(numero);
+        flag_primo = 1;
+        for (divisor = 1; divisor < raiz || divisor == raiz, divisor++ )
+            if (numero % divisor == 0) {
+                flag_primo = 0
+                break;
+            }
+        (flag_primo) ? printf("%d eh primo\n", numero) :
+                        printf("%d nao eh primo\n", numero)
+    }    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

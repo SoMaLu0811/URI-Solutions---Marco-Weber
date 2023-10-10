@@ -1,0 +1,8 @@
+n = int()
+lista= []
+for x in range(5):
+    n = int(input())
+    if n%2 ==0:
+        lista.append(n)
+
+print(f'{len(lista)} valores pares')

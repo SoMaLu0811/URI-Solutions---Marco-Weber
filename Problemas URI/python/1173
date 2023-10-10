@@ -1,0 +1,14 @@
+lista = []
+n = int(input())
+if n>=50:
+        n = 49
+        
+lista.append(n)
+c = 0
+print(f'N[0] = {n}') 
+for i in range(0,9):
+    n *=2
+    lista.append(n)
+    c +=1
+    print(f'N[{c}] = {n}')
+    

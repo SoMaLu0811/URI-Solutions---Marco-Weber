@@ -1,0 +1,13 @@
+soma = 0 
+n = int(input())
+x, y = map(int, input().split())
+if x%2 != 0:
+    soma += x
+
+if x
+for x in range(n):
+    x+=1
+    if x%2 != 0:
+        soma+=x 
+        
+print(soma)

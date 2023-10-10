@@ -1,0 +1,19 @@
+n = int()
+lista_n = []
+lista_p = []
+lista_im = []
+lista_po = []
+for x in range(5):
+    n = int(input())
+    if n<0:
+        lista_n.append(n)
+    if n%2 == 0:
+        lista_p.append(n)
+    if n%2 != 0:
+        lista_im.append(n)
+    if n>0:
+        lista_po.append(n)
+print(f'{len(lista_p)} valor(es) par(es)')
+print(f'{len(lista_im)} valor(es) impar(es)')
+print(f'{len(lista_po)} valor(es) positivo(s)')
+print(f'{len(lista_n)} valor(es) negativo(s)')

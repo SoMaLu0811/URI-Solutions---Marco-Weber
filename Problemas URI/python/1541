@@ -1,0 +1,4 @@
+c = int(input())
+for i in range(c):
+    a, b, c = map(int, input().split())
+    

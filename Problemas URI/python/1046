@@ -1,0 +1,8 @@
+inicio, fim = map(int, input().split())
+t = int()
+if inicio < fim:
+    t = fim-inicio 
+else:
+    t = (24-inicio)+fim 
+print(f'O JOGO DUROU {t} HORA(S)')
+    

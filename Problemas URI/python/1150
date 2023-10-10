@@ -1,0 +1,19 @@
+x = int(input())
+z = int(input())
+lista_n = []
+count = 0
+j = 1
+
+while z<=x:
+    z = int(input())
+
+count = x 
+j = 1
+aux = count 
+vezes = 0
+while aux <z:
+    count +=j
+    aux += count
+    vezes += 1
+    
+print(vezes+1)

@@ -1,0 +1,15 @@
+n = int(input())
+n2 = int()
+lista = []
+lista_2 = []
+if n>=1000:
+    n = 999
+for x in range(n):
+    n2 = int(input())
+    if 10<= n2 <=20:
+        lista.append(n2)
+    else:
+        lista_2.append(n2)
+
+print(f'{len(lista)} in')
+print(f"{len(lista_2)} out")

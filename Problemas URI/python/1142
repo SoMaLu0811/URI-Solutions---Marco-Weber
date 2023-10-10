@@ -1,0 +1,8 @@
+n = int(input())
+n2 = int(1)
+for x in range(n):
+    print(f'{n2} {n2+1} {n2+2} PUM')
+    n2+=4
+    
+    
+    

@@ -1,0 +1,11 @@
+x = float(input())
+n = []
+n.append(x)
+c = int(0)
+print(f'N[{c}] = {x:.4f}')
+
+for i in range(0,99):
+    x/=2
+    c +=1
+    n.append(n)
+    print(f'N[{c}] = {x:.4f}')

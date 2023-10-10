@@ -1,0 +1,43 @@
+from numpy import append
+
+
+n = int()
+p = []
+im = []
+for x in range(0,14):
+    n = int(input())
+    if n%2 == 0:
+        p.append(n)
+    else:
+        im.append(n)
+    
+    if len(p) ==5:
+        ix = 0 
+        for v in p:
+            print(f'par[{ix}] = {v}')
+            ix +=1
+        par = []
+        
+    if len(im) == 5:
+        ix = 0 
+        for v in im:
+            print(f'impar[{ix}] = {v}')
+            ix +=1
+        impar = []
+    if len(im)>0:
+        ix = 0 
+        for v in im:
+            print(f'impar[{ix}] = {v}')
+            ix +=1
+    if len(p)>0:
+        ix = 0
+        for v in im:
+            print(f'impar[{ix}] = {v}')
+            ix+=1
+            
+    if len(p)>0:
+        ix = 0 
+        for v in p:
+            print(f'par[{ix}] = {v}')
+            ix+=1
+            

@@ -1,0 +1,18 @@
+n = int(input())
+for x in range(0,n):
+    pa, pb, ga, gb = map(float, input().split())
+    ga /= 100
+    gb /= 100
+    anos = 0
+    while True:
+        pa += int(pa *ga)/100
+        pb += int(pb*ga)/100
+        anos +=1
+        if pa > pb or anos>=100: 
+            break
+    if anos<=100:
+        print(f'{anos} anos')
+    elif anos>100:
+        print('Mais de 1 seculo')
+            
+            

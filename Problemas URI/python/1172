@@ -1,0 +1,9 @@
+lista = []
+for i in range(0,10):
+    x = int(input())
+    if x<=0:
+        x = 1
+        lista.append(x)
+    else: 
+        lista.append(x)
+    print(f'X[{lista[i]}] = {x}')

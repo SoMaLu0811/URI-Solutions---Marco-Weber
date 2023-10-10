@@ -1,0 +1,12 @@
+x, y = map(int, input().split())
+if x<= 1:
+    x = 2
+elif x>=20:
+    x=19
+elif y<=x:
+    y = x+1
+elif y>+100000:
+    y = 99999
+
+for x in (1, y):
+    

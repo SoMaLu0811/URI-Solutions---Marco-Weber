@@ -1,0 +1,4 @@
+def seculo(ano, seculo):
+    ano = int(input())
+    
+    

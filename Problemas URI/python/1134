@@ -1,0 +1,31 @@
+import sys
+
+
+alcool_1 = []
+gasolina_1 = []
+diesel_1 = []
+alcool = int()
+gasolina = int()
+diesel = int()
+opcao = int()
+while True:
+    opcao = int(input())
+    if opcao == 1:
+        alcool +=1
+        alcool_1.append(alcool)
+    elif opcao == 2:
+        gasolina +=1
+        gasolina_1.append(gasolina)
+    elif opcao == 3:
+        diesel += 1
+        diesel_1.append(diesel)
+    elif opcao == 4:
+        break
+    else: 
+        continue
+
+
+print("MUITO OBRIGADO")
+print(f"Alcool: {len(alcool_1)}")
+print(f"Gasolina: {len(gasolina_1)}")
+print(f"Diesel: {len(diesel_1)}")

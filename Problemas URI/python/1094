@@ -1,0 +1,29 @@
+n = int(input())
+c = 0
+r = 0
+s = 0
+
+for x in range(n):
+    a, ch = list(map(str, input().split()))
+    a = int(a)
+    if(ch == 'C'):
+        c += a
+    elif (ch == 'R'):
+        r +=a
+    else:
+        s += a
+
+total = c+r+s
+x = (c*100)/total
+y = (r*100)/total 
+z = (s*100)/total 
+print(f"Total: {total} cobaias")
+print(f'total de coelhos: {c}')
+print(f'Total de ratos: {r}')
+print(f'Total de sapos: {s}')
+print("Percentual de coelhos: {:.2f}".format(x))
+print("Percentual de ratos: {:.2f}".format(y))
+print("Percentual de sapos: {:.2f}".format(z))
+
+          
+            

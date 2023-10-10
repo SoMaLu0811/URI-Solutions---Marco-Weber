@@ -1,0 +1,12 @@
+n2 = int(0)
+n = int(input())
+n3 = int
+if n>= 10000:
+    n = 9999
+
+for x in range(0, 10000):
+    n2+= 1
+    n3 = n2/n
+    if n2%n == 2:
+        print(n2)
+        
