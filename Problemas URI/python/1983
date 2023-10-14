@@ -1,0 +1,28 @@
+n = int(input())
+lista = []
+notas = set([])
+lista2 = set([])
+lista3 = set([])
+c = 0
+c2 = 0
+
+for x in range(n):
+    m, no = map(int, input().split())
+    lista.append(m)
+    notas.add(no)
+    c+=1
+    c2+=1
+    for y in range(x):
+        lista2.add(x)
+        lista3.add(x)
+
+maior_n = max(set(notas))
+mat_maior = lista[x] 
+if maior_n<8:
+    print('Minimum note not reached')
+else:
+    print(lista[n])
+
+
+    
+    

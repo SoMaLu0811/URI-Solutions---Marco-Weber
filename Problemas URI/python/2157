@@ -1,0 +1,11 @@
+n =  int(input())
+while n>0:
+    n-=1
+    b,e = map(int, input().split())
+    s = ''
+    for i in range(b, e+1):
+        s+=str(i)
+    s+=s[::-1]
+    print(s)
+    
+        

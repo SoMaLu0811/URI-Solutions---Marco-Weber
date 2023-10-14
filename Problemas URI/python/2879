@@ -1,0 +1,14 @@
+from random import choice
+n = int(input())
+print(n)
+op = int()
+lista = [2,3]
+for x in range(n):
+    op = int(input())
+    if op>3:
+        op = 3
+    elif op<2:
+        op = 2
+    escolha = choice(lista)
+    print(escolha)
+    

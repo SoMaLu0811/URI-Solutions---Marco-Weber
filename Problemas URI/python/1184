@@ -13,9 +13,8 @@ if o == 'S':
     c = 11
     for i in range(11,0,-1):
         for j in range(0,c):
-            #print('m[{}][{}]'.format(i,j))
-            s = s + m[i][j]
-        c = c -1
+           s += m[i][j]
+        c -= 1
     print('{:.1f}'.format(s))
 
 if o == 'M':
@@ -24,10 +23,10 @@ if o == 'M':
     c2=0
     for i in range(11,0,-1):
         for j in range(0,c):
-            #print('m[{}][{}]'.format(i,j))
+            
             s = s + m[i][j]
-            c2= c2 + 1
-        c = c - 1
+            c2+=1
+        c -=1
         
     m=s/(c2)
     print('{:.1f}'.format(m))

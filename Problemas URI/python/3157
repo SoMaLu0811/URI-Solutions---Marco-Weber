@@ -1,0 +1,7 @@
+while True:
+    try:
+        s = str(input())
+        print('Nao se refuta ciencia com opiniao')
+    except EOFError:
+        break 
+    

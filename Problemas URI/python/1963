@@ -1,0 +1,6 @@
+a, b = input().split(' ')
+a = int(a)
+b = int(b)
+dif = b-a
+porca = (100*dif)/a
+print(f'{porca:.2f}%')

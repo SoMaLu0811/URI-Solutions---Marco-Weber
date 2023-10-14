@@ -1,0 +1,39 @@
+t = int(input())
+lista = []
+if t>4:
+    t = 4
+elif t<1:
+    t = 1
+a, b, c, d, e = map(int,input().split())
+if a>4:
+    a = 4
+elif a<1:
+    a= 1
+if b>4:
+    b = 4
+elif b<1:
+    b= 1
+if c>4:
+    c = 4
+elif c<1:
+    c= 1
+if d>4:
+    d = 4
+elif d<1:
+    d= 1
+if e>4:
+    e = 4
+elif e<1:
+    e= 1
+if a==t:
+    lista.append(a)
+if b==t:
+    lista.append(b)
+if c == t:
+    lista.append(c)
+if d == t:
+    lista.append(d)
+if e == t:
+    lista.append(e)
+    
+print(len(lista))

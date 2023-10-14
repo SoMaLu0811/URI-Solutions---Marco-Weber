@@ -1,4 +1,12 @@
-c = int(input())
-for i in range(c):
+import math 
+while True:
     a, b, c = map(int, input().split())
+    if a == 0 or b == 0 or c ==0:
+        break
+    area = a*b
+    terreno = (100/c)*area
+    lado = math.sqrt(terreno)
+    print(f'{lado}')
+    
+    
     

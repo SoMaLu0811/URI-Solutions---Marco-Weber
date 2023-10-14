@@ -1,0 +1,8 @@
+c = int(input())
+for x in range(c):
+    x = input().split()
+    a = x
+    if a == 'Thor':
+        print('Y')
+    else:
+        print('N')

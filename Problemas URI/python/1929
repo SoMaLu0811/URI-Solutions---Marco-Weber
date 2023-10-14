@@ -1,0 +1,24 @@
+def verif(a,b,c):
+    if abs(b-c)< a < (b+c):
+        if abs(a-c)<b<(a+c):
+            if abs(a-b)< c <(a+b):
+                return True
+    else:
+        return False
+    
+    
+def input():
+    a,b,c,d = map(int, input().split())
+    return a,b,c,d
+
+def s_n(a,b,c,d):
+    if verif(a,b,c) or verif(a,b,d) or verif(a,c,d) or verif(b,c,d):
+        print('S')
+    else:
+        print('N')
+    
+    
+def main():
+    a,b,c,d = input()
+
+main()
