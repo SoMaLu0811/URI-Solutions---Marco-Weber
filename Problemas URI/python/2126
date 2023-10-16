@@ -1,0 +1,15 @@
+while True:
+    try:
+        n = int(input())
+        sub = 0
+        for i in range(n):
+            n1 = str(input())
+            n2 = str(input())
+            if n1==n2:
+                sub +=1
+            print(f'caso #{i}:')
+            print(f'Qtd.subsequencias: {sub}')
+            
+        
+    except EOFError:
+        break 

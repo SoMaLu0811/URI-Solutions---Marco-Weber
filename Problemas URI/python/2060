@@ -1,0 +1,25 @@
+n = int(input())
+div_2 = []
+div_3 = []
+div_4 = []
+div_5 = []
+l = input().split(' ')
+ln = l[:n]
+
+for x in range(n):
+    ln[x] = int(ln[x])
+    if ln[x]%2 == 0:
+        div_2.append(l)
+    if ln[x]%3 == 0:
+        div_3.append(l)
+    if ln[x]%4 == 0:
+        div_4.append(l)
+    if ln[x]%5 == 0:
+        div_5.append(l)
+    
+print(f'{len(div_2)} Multiplo(s) de 2')
+print(f'{len(div_3)} Multiplo(s) de 3')
+print(f'{len(div_4)} Multiplo(s) de 4')
+print(f'{len(div_5)} Multiplo(s) de 5')
+
+    
