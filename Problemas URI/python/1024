@@ -1,0 +1,24 @@
+import re
+n = int(input())
+
+for i in range(n):
+    texto = input()
+    texto_n = ''
+    
+    for l in texto:
+        if re.match("[a-zA-Z]", l):
+            texto_n += chr(ord(l)+3)
+        else:
+            texto_n += l 
+            
+    texto_n = texto_n[::-1]
+    meio = int((len(texto_n)/2)) 
+    metade1 = texto_n[0:meio]
+    metade2 = texto_n[meio:]
+    metade_n = ''   
+    
+    for l in metade2:
+        metade_n += chr(ord(l)-1)
+    texto_f = metade1+metade_n
+    print(texto_f)  
+                

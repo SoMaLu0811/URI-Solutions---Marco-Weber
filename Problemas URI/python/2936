@@ -1,0 +1,12 @@
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+n4 = int(input())
+n5 = int(input())
+pn1 = n1*300
+pn2 = n2*1500
+pn3 = n3*600
+pn4 = n4*1000
+pn5 = n5*150
+total = pn1+pn2+pn3+pn4+pn5+225
+print(total)

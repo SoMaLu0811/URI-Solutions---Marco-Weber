@@ -1,0 +1,21 @@
+while True:
+    try:
+        m, n = map(int, input().split())
+        if n == 0 and m == 0:
+            break 
+        troco = m-n
+        if 0 >=troco >=2:
+            print("Possible")
+        elif 2<= troco <=5:
+            print('Possible')
+        elif 5<= troco <=10:
+            print('Possible')
+        elif 10<= troco <=20:
+            print('Possible')
+        elif 20<= troco <=50:
+            print('Possible')
+        elif 50<= troco <=100:
+            print("Possible")
+        else:
+            print('Impossible')
+    except EOFError: break 

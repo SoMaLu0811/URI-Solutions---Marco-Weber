@@ -1,15 +1,17 @@
+caso = 1
 while True:
     try:
-        n = int(input())
-        sub = 0
-        for i in range(n):
-            n1 = str(input())
-            n2 = str(input())
-            if n1==n2:
-                sub +=1
-            print(f'caso #{i}:')
-            print(f'Qtd.subsequencias: {sub}')
-            
-        
+        n1 = input()
+        n2 = input()
+        print(f'Caso #{caso}:')
+        qt = n2.count(n1)
+        if qt ==0:
+            print('Nao existe subsequencia')
+        else:
+            print(f'Qtd.Subsequencias: {qt}')
+            qt = n2.rfind(n1)
+            print(f'Pos: {(int(qt)+1)}')
+        print()
+        caso +=1
     except EOFError:
         break 

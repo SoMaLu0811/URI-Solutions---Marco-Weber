@@ -1,0 +1,12 @@
+n = int(input())
+carrinhos = []
+bonecas = []
+for i in range(n):
+    cr, se = map(str, input().split())
+    if se == 'M':
+        carrinhos.append(+1)
+    elif se == 'F':
+        bonecas.append(+1)
+
+print(f'{len(carrinhos)} carrinhos')
+print(f'{len(bonecas)} bonecas')

@@ -1,0 +1,23 @@
+from datetime import datetime
+while True: 
+    try:
+        m, d= input().split()
+        print(m, d)
+        if len(m) == 1:
+            m = '0'+m
+        if len(d)==1:
+            d = '0'+d
+        data = '2016'+m+d
+        natal = '20161225'
+        data = datetime.strptime(data,f'{m,d}')       
+        natal = datetime.strptime(natal, f'{m, d}')
+        dias = (natal-data).days
+        if dias==0:
+            print( 'E natal!')
+        elif dias ==1:
+            print('E vespera de natal!')
+        elif dias<0:
+            print('Ja passou!')
+        else:
+            print(f'Faltam {dias} para o natal!')
+    except EOFError: break
