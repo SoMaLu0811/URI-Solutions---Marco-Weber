@@ -1,0 +1,10 @@
+while True:
+    try:
+       h, z, l = map(int, input().split())
+       if h< z <l:
+           print("zezinho")
+       elif z< h <l:
+           print("huguinho")
+       elif z< l<h:
+           print('luisinho')
+    except EOFError: break 

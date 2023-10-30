@@ -1,0 +1,5 @@
+import string
+lista= list(string.ascii_lowercase)
+n =int(input())
+print(lista[n])
+#não terminado

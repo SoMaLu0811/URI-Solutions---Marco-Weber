@@ -2,6 +2,7 @@
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
     "files.associations": {
-        "1141": "cpp"
+        "1141": "cpp",
+        "2143": "c"
     }
 }

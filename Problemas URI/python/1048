@@ -3,30 +3,30 @@ reajuste = float()
 if 0<= sal <= 400:
     reajuste = sal*0.15
     sal += reajuste 
-    print('Novo salario: {:.2f}'.format(sal))
-    print('Reajuste ganho: {:.2f}'.format(reajuste))
+    print(f'Novo salario: {sal:.2f}')
+    print(f'Reajuste ganho: {reajuste:.2f}')
     print(f'Em percentual: 15 %')
 elif 400.01<= sal <= 800:
     reajuste = sal*0.12
     sal+= reajuste
-    print('Novo salario: {:.2f}'.format(sal))
-    print('Reajuste ganho: {:.2f}'.format(reajuste))
+    print(f'Novo salario: {sal:.2f}')
+    print(f'Reajuste ganho: {reajuste:.2f}')
     print(f'Em percentual: 12 %')
 elif 800.01<= sal <=1200:
     reajuste = sal*0.10
     sal+= reajuste
-    print('Novo salario: {:.2f}'.format(sal))
-    print('Reajuste ganho: {:.2f}'.format(reajuste))
+    print(f'Novo salario: {sal:.2f}')
+    print(f'Reajuste ganho: {reajuste:.2f}')
     print('Em percentual: 10 %')
 elif 1200.01<= sal <=2000:
     reajuste = sal*0.07
     sal += reajuste
-    print('Novo salario: {:.2f}'.format(sal))
-    print('Reajuste ganho: {:.2f}'.format(reajuste))
+    print(f'Novo salario: {sal:.2f}')
+    print(f'Reajuste ganho: {reajuste:.2f}')
     print('Em percentual: 7 %')
 elif sal>2000:
     reajuste = sal*0.04
     sal += reajuste
-    print('Novo salario: {:.2f}'.format(sal))
-    print('Reajuste ganho: {:.2f}'.format(reajuste))
+    print(f'Novo salario: {sal:.2f}')
+    print(f'Reajuste ganho: {reajuste:.2f}')
     print(f'Em percentual: 4 %')
