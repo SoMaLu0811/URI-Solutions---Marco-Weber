@@ -1,22 +1,20 @@
 from sys import stdin
 n = int(input())
-x = [int(i) for i in stdin.readline().split()]
+x =[int(i) for i in stdin.readline().split()]
 total = sum(x)
-atacadas = [0] * n
+atacadas = [0]*n
 i = 0
 for y in range(n):
-    
-
     while i >= 0 and i < n: 
         lado = x[i] % 2
         if x[i] > 0:
             x[i] -= 1
-        atacadas[i] = 1
+        atacadas = 1
         total -= 1
         if lado:
             i += 1
         else:
             i -= 1
 
-atacadas = atacadas.count(1)
+atacadas = atacadas.append(i)
 print(atacadas, total)
