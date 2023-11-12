@@ -1,0 +1,19 @@
+c,b,p = map(int, input().split())
+cr, br, pr = map(int, input().split())
+restoc = c-cr
+if restoc<0:
+    restoc *=-1
+elif restoc>0:
+    restoc=0
+restob = b-br
+if restob<0:
+    restob*=-1
+elif restob>0:
+    restob = 0 
+restop = p-pr
+if restop<0:
+    restop*=-1
+elif restop>0:
+    restop=0
+csa = restop+restob+restoc
+print(csa)

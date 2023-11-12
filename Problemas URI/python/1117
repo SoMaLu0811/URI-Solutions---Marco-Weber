@@ -1,11 +1,13 @@
 while True:
-    a1 = float(input())
-    a2 = float(input())
-    if a1<0 or a1>10:
-        print("nota invalida")
-    elif a2<0 or a2>10:
-        print("nota invalida")
-    elif (0<= a1 <=10) and (0<= a2 <=10):
-        media = (a1+a2)/2
-        print(f'media = {media}')
-        break    
+    try:    
+        a1 = float(input())
+        a2 = float(input())
+        if a1<0 or a1>10:
+            print("nota invalida")
+        elif a2<0 or a2>10:
+            print("nota invalida")
+        elif (0<= a1 <=10) and (0<= a2 <=10):
+            media = (a1+a2)/2
+            print(f'media = {media}')
+            
+    except EOFError:break     
