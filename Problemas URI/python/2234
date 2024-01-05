@@ -1,0 +1,3 @@
+h,p = map(int, input().split())
+me = h/p
+print(f'{me:.2f}')

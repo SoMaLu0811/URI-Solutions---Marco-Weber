@@ -8,7 +8,6 @@ def raiz_quadrada(a, b, c, delta1, r1, r2):
     elif delta1<0:
         print("Impossivel calcular")
     else:
-        delta1 = ((b**2)-(4*a*c))
         delta2 =  sqrt(delta1)     
         r1 = (-b+delta2)/(2*a)
         r2 = (-b-delta2)/(2*a)

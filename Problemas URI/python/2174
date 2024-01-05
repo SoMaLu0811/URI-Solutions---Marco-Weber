@@ -1,0 +1,6 @@
+lista = set()
+n = int(input())
+for x in range(n):
+    m = str(input())
+    lista.add(m)
+print(f'Falta(m) {151 - len(lista)} pomekon(s).')

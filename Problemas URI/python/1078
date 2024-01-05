@@ -1,8 +1,4 @@
 n = int(input())
-if n<=1:
-    n = 2
-elif n>=1000:
-    n = 999
 r = int
 for x in range(1,11):
     r = n*x

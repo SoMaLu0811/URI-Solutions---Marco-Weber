@@ -11,53 +11,53 @@ moedas_010 = 0
 moedas_05 = 0
 moedas_01 = 0 
 
-valor = int(input())
+valor = float(input())
 print(valor)
-while valor>100:
+while valor>=100:
     valor = valor-100
     quantidade_100 = quantidade_100 + 1
-while valor>50:
+while valor>=50:
     valor = valor-50
     quantidade_50 = quantidade_50+1
-while valor>20:
+while valor>=20:
     valor = valor-20
     quantidade_20 = quantidade_20+1
-while valor>10:
+while valor>=10:
     valor = valor-10
     quantidade_10 = quantidade_10+1
-while valor>5:
+while valor>=5:
     valor = valor - 5 
     quantidade_5 = quantidade_5+1
-while valor>2:
+while valor>=2:
     valor = valor-2
     quantidade_2 = quantidade_2+1
-while valor>1: 
+while valor>=1: 
     valor = valor-1
     quantidade_1 = moedas_1+1
-while valor>0.50:
+while valor>=0.50:
     valor = valor-0.50
     moedas_050 = moedas_050+1
-while valor>0.25:
+while valor>=0.25:
     valor = valor-0.25
     moedas_025 = moedas_025+1
-while valor>0.10:
+while valor>=0.10:
     valor = valor-0.10
-while valor>0.05:
+while valor>=0.05:
     valor = valor-0.05
     moedas_05 = moedas_05+1
-while valor>0.01:
+while valor>=0.01:
     valor = valor-0.01
     moedas_01 = moedas_01+1
 
     
 print("NOTAS:")
-print(f"{quantidade_100} nota(s) de R$ 100,00")
-print(f"{quantidade_50} nota(s) de R$ 50,00")
-print(f"{quantidade_20} nota(s) de R$ 20,00")
-print(f"{quantidade_10} nota(s) de R$ 10,00")
-print(f"{quantidade_5} nota(s) de R$ 5,00")
-print(f"{quantidade_2} nota(s) de R$ 2,00")
-print(f"{moedas_1} nota(s) de R$ 1,00")
+print(f"{quantidade_100} nota(s) de R$ 100.00")
+print(f"{quantidade_50} nota(s) de R$ 50.00")
+print(f"{quantidade_20} nota(s) de R$ 20.00")
+print(f"{quantidade_10} nota(s) de R$ 10.00")
+print(f"{quantidade_5} nota(s) de R$ 5.00")
+print(f"{quantidade_2} nota(s) de R$ 2.00")
+print('MOEDAS:')
 print(f"{moedas_1} moeda(s) de R$ 1.00 ")
 print(f"{moedas_050} moeda(s) de R$ 0.50")
 print(f"{moedas_025} moeda(s) de R$ 0.25")

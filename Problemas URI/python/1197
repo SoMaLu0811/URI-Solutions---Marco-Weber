@@ -1,0 +1,6 @@
+while True:
+    try:
+        v, t = map(int, input().split())
+        
+    
+    except EOFError: break 
