@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    char inp[100];
+    cin<<"";
+    cout<<"I am Toorg!"
+    return 0;
+
+}
