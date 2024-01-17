@@ -1,15 +1,14 @@
-le = set()
-coun = set()
 while True:
     try:
-        n,i = map(int, input().split())
+        coun = 0
+        n,ip = map(int, input().split())
         for x in range(n):
+            
             i,j = map(int, input().split())
-            if j==0:
-                coun.add(j)
-            elif j==1:
-                le.add(j)
+            if j==0 and i==ip :
+                coun+=1
+            
              
-        print(f'{len(coun)+1}')
+        print(coun)
         
     except EOFError:break 
