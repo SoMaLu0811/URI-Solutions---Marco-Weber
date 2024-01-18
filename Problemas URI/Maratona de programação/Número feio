@@ -1,11 +1,17 @@
-n = 0
 x = 0  
-p = 0 
-while n<1500:
+def primo(x):
+    for i in range(x,int(x/2)):
+        if x%i==0 and x%2!=0 or x%3!=0 or x%5!=0: return False
+            
+        return True 
+n = 0
+lista = [1]
+while n<1501:
     x+=1
-    if x%2==0 or x%3==0 or x%5==0:
+    if x%2==0 or x%3==0 or x%5==0 and primo(x):
         n+=1
-        p = x
-print(p)
+        lista.append(x)
+
+print(lista)
 
         

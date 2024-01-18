@@ -1,0 +1,20 @@
+n = int(input())
+for i in range(n):
+    a,b,c = input().split()
+    r = ''
+    if int(a)<10 and len(a)==1:
+        r = '0'+a
+    else: 
+        r = a
+    r+=':'
+    if int(b)<10 and len(b): 
+        r += '0'+b
+    else: 
+        r+=b
+    r+=' - A porta '
+    if c=='0':
+        r+='fechou!'
+    else:
+        r+='abriu!'
+    print(r)
+    
