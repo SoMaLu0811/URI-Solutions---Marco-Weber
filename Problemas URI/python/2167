@@ -1,0 +1,11 @@
+n = int(input())
+r = input().split()
+q = 0 
+for x in range(1,n):
+    if (int(r[x-1]))>(int(r[x])):
+        q=x+1
+        break 
+    
+print(q)
+        
+        
