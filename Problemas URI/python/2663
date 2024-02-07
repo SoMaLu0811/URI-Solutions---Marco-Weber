@@ -1,0 +1,9 @@
+n = int(input())
+k = int(input())
+competidor = [int(input()) for x in range(n)]
+competidor.sort(reverse=True)
+total=k
+while k < n and competidor[k] == competidor[k-1]:
+    total+=1
+
+print(total)

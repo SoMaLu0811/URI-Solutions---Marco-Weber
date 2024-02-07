@@ -1,0 +1,21 @@
+#não resolvido
+n = int(input())
+ts=tsb=tb=tbs=ta=tas=0
+for x in range(n):
+    n = input()
+    s,b,a=map(int,input().split())
+    s1,b1,a1=map(int,input().split())
+    ts+=s
+    tsb+=s1
+    tb+=b
+    tbs+=b1
+    ta+=a
+    tas+=a1
+    
+ps=100*tsb-ts
+print(ps)
+pb=100*tbs-tb
+print(pb)
+pa=100*tas-ta
+print(pa)
+#não resolvido

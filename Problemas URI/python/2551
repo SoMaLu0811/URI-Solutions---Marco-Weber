@@ -1,0 +1,9 @@
+lista=[]
+while True:
+    try:
+        n=int(input())
+        for i in range(n):
+            t,d=map(int,input().split())
+            
+    except EOFError:break 
+    

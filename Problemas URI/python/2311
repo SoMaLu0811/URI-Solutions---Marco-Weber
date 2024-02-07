@@ -1,0 +1,8 @@
+n = int(input())
+for x in range(n):
+    nome = input()
+    gd = float(input())
+    nota= [float(i) for i in input().split()]
+    nota = sum(sorted(nota)[1:6])*gd
+    print(f'{nome} {nota:.2f}')
+

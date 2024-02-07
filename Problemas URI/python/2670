@@ -1,0 +1,9 @@
+a1=int(input())
+a2=int(input())
+a3=int(input())
+minutos=[]
+minutos.append(a1*4+a2*2)
+minutos.append(a1*2+a3*4)
+minutos.append(a2*2+a3*4)
+minutos.sort()
+print(minutos[0])

@@ -1,0 +1,12 @@
+while True:
+    try:
+        v = 0
+        n,ami,ama=map(int,input().split())
+        for i in range(n):
+            a = int(input())
+            if ami<=a<=ama:
+                v+=1
+        print(v)
+                
+    except EOFError:break
+    

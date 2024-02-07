@@ -1,0 +1,12 @@
+lista=[]
+while True:
+    try:
+        n,q=map(int,input().split())
+        for i in range(n):
+            nc=int(input())
+            lista.append(nc)
+            lista.sort(reverse=True)
+        for x in range(q):
+            cc=int(input())
+            print(lista[cc-1])
+    except EOFError:break 

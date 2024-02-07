@@ -1,0 +1,7 @@
+s = input()
+up = 0 
+for i in s:
+    if i=='1':
+        up+=1
+        
+print(s+str(up%2))

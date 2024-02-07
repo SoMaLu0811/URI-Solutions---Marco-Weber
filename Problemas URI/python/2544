@@ -1,0 +1,11 @@
+while True:
+  try:
+    n=int(input())
+    res=0
+    qtd=1
+    while qtd < n:
+      qtd*=2
+      res+=1
+    print(res)
+  except EOFError:
+    break

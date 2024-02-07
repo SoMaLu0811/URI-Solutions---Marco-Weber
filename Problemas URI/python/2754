@@ -1,0 +1,10 @@
+from decimal import Decimal 
+n,n2 = float(234.345),float(45.698)
+print(f'{n:.6f} - {n2:.6f}')
+print(f'{n:.0f} - {n2:.0f}')
+print(f'{n:.1f} - {n2:.1f}')
+print(f'{n:.2f} - {n2:.2f}')
+print(f'{n:.3f} - {n2:.3f}')
+print(f'{Decimal(n)}e - {Decimal(n2)}e')
+print(f'{Decimal(n)}E - {Decimal(n2)}E')
+print(f'{n} - {n2}')

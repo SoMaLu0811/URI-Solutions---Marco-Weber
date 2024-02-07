@@ -1,0 +1,14 @@
+while True:
+    try:
+        t=int(input())
+        c=0
+        n=0
+        for i in range(t):
+            m1,m2=input().split()
+            c+=int(m2)
+            n+= int(m2)*int(m1)
+            
+        ira=n/(c*100)
+        print(f'{ira:.4f}')
+            
+    except EOFError:break

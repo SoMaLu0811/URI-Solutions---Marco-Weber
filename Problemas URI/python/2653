@@ -1,0 +1,7 @@
+lista=set()
+while True:
+    try:
+        lista.add(input())
+    except EOFError:break 
+    
+print(len(lista))

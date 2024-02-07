@@ -9,7 +9,6 @@ def primo(n):
 n = int(stdin.readline())
 primo(n)
 if primo(n):
-    saida = 'é primo'
+    print(f'O número {n} é primo')
 else:
-    saida = 'não é primo'
-print(f"O número {n} {saida}")
+    print(f'O número {n} não é primo')
