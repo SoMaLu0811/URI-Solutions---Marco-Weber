@@ -1,0 +1,13 @@
+import sys
+sys.setrecursionlimit(20000)
+def josephus(n,k):
+    if n==1:
+        return 1
+    else:
+        return (josephus(n-1,k)+k-1)%n+1
+nc=int(input())
+for i in range(nc):
+    n,m=map(int,input().split())
+
+    print(f'Case {i+1}: {josephus(n,m)}')
+

@@ -1,0 +1,19 @@
+from sys import stdin 
+while True:
+    try:
+        dançante=''
+        sentença=stdin.readline()
+        maiuscula=True
+        for i in sentença:
+            if i==' ':
+                dançante+=' '
+                continue
+            if maiuscula:
+                dançante+=i.upper()
+                maiuscula=False
+            else:
+                dançante+=i.lower()
+                maiuscula=True
+                
+        print(dançante)
+    except EOFError:break 

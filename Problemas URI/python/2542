@@ -1,0 +1,6 @@
+n=int(input())
+m,l=map(int,input().split())
+for i in range(m):
+    a=[for n in int, input().split()]
+    
+    

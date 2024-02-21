@@ -1,38 +1,46 @@
-n = 9999
-
 while True:
-    n = int(input())
-    if n <= 0:
-        break
-    if n > 0:
-        m = []
-        for i in range(0,n):
-            m.append([])
-            for j in range(0,n):
-                m[i].append(0)
-        if n % 2 == 0:
-            t = n // 2 
-        else:
-            t = 1 + n // 2 
+    n=int(input())
+    if n==0:
+        break 
+    matriz=[]
 
-        min = 0
-        max = n
-        cont = 0
-        for k in range(0,t):
-            cont += 1
-            for i in range(min,max):
-                
-                for j in range(min,max):
-                    m[i][j] = cont
-            min += 1
-            max -= 1
-
-
-
-
-    for i in range(0,n):
-        for j in range(0,n):
-            m[i][j] = str(m[i][j])
-        M = '   '.join(m[i])
-        print(' ',M)
-    print()
+    for i in range(n):
+        tmp=[]
+        for x in range(n):
+            tmp.append(1)
+        matriz.append(tmp)
+    valor=1
+    acima=0
+    esq=0
+    abaixo=n-1
+    dire=n-1
+    
+    if n%2==0:
+        meio=n/2
+    else:
+        meio=(n+1)/2
+    
+    while valor<=meio:
+        i=esq
+        while i<=dire:
+            matriz[acima][i]=valor
+            matriz[abaixo][i]=valor
+            i+=1
+        i=acima+1
+        while i<abaixo:
+            matriz[i][esq]=valor
+            matriz[i][dire]=valor
+            i+=1
+        valor+=1
+        acima+=1
+        abaixo-=1
+        esq+=1
+        dire-=1
+    for i in range(n):
+        tx=''
+        for x in range(n):
+            tx+=f'{matriz[i][x]}'
+        print(tx[1:])
+    print('')
+    
+            
