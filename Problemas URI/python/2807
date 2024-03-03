@@ -1,0 +1,7 @@
+iccano=[1,1]
+n=int(input())
+for i in range(2,n):
+    iccano.append(iccano[i-1]+iccano[i-2])
+iccano.sort(reverse=True)
+
+print(*iccano[:n],sep=' ')

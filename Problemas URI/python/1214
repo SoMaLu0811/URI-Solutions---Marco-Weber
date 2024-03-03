@@ -1,0 +1,15 @@
+while True:
+    try:
+        c=int(input())
+        for i in range(c):
+            nt=list(map(int,input().split()))
+            nt.remove(nt[0])
+            media=sum(nt)/(len(nt))
+            cont=percentual=0
+            for x in range(len(nt)):
+                if nt[x]>media:
+                    cont+=1
+            percentual=(cont*100)/len(nt)
+            print(f'{percentual:.3f}%')
+            
+    except EOFError:break 
