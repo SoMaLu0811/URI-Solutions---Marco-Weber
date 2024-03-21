@@ -1,0 +1,7 @@
+while True:
+    try:
+        c=int(input())
+        for i in range(c):
+            p=input()
+            print("gzuz")
+    except EOFError:break 

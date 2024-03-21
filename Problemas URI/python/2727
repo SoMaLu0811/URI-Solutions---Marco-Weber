@@ -1,0 +1,14 @@
+while True:
+    try:
+        alf='abcdefghijklmnopqrstuvwxyz'
+        n=int(input())
+        saida=''
+        for i in range(n):
+            l=input().split()
+            pos=len(l[0])+3*(len(l)-1)
+            saida +=alf[pos-1]
+            
+        for n in saida:
+            print(n)
+            
+    except EOFError:break 

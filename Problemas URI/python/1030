@@ -1,5 +1,5 @@
-import sys
-sys.setrecursionlimit(20000)
+from sys import setrecursionlimit
+setrecursionlimit(20000)
 def josephus(n,k):
     if n==1:
         return 1

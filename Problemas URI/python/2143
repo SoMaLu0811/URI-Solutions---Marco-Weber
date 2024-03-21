@@ -3,12 +3,11 @@ while True:
     if not n:
         break
     pessoas = []
-    while n:
-        n -= 1
+    for i in range(n):
         x = int(input())
-        if x % 2 == 0:
-            pessoas.append((2 * x) - 2)
+        if x%2==0:
+            pessoas.append((2*x)-2)
         else:
-            pessoas.append((2 * x) - 1)
+            pessoas.append((2*x)-1)
     for i in pessoas:
         print(i)       

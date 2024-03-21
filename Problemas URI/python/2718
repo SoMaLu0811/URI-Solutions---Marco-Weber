@@ -1,0 +1,14 @@
+n=int(input())
+for i in range(n):
+    l=bin(int(input()))
+    l=l[2:]
+    m=0
+    aux=0
+    for i in l:
+        if i=='1':
+            aux+=1
+        else:
+            aux=0
+        if aux>m:
+            m=aux
+    print(m)

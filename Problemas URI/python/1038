@@ -1,16 +1,16 @@
 x,y = map(int, input().split())
 if x == 1:
     valor = y*4
-    print("Total: R$ {:.2f}".format(valor))
+    print(f"Total: R$ {:.2f}")
 elif x == 2:
     valor = y*4.5
-    print("Total: R$ {:.2f}".format(valor))
+    print(f"Total: R$ {valor:.2f}")
 elif x == 3:
     valor = y*5
-    print("Total: R$ {:.2f}".format(valor))
+    print(f"Total: R$ {valor:.2f}")
 elif x == 4:
     valor = y*2
-    print("Total: R$ {:.2f}".format(valor))
+    print(f"Total: R$ {valor:.2f}")
 elif x == 5:
     valor = y*1.5
-    print("Total: R$ {:.2f}".format(valor))
+    print(f"Total: R$ {valor:.2f}")

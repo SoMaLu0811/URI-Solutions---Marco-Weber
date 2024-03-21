@@ -1,0 +1,7 @@
+while True:
+    try:
+        c=int(input())
+        for i in range(c):
+            n=int(input())
+            print("Inseto!") if n<=8000 else print("Mais de 8000!")
+    except EOFError:break
