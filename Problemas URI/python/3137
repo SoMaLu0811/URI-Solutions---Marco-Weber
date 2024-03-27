@@ -1,0 +1,6 @@
+h,e,a,o,w,x=map(int,input().split())
+if (h+e+a+x)>=(w+o):
+    print("Middle-earth is safe.")
+elif (h+e+a+x)<(w+o):
+    print("Sauron has returned.")
+    
