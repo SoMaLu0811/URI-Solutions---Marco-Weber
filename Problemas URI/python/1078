@@ -1,5 +1,3 @@
 n = int(input())
-r = int
 for x in range(1,11):
-    r = n*x
-    print(f'{x} x {n} = {r}')
+    print(f'{x} x {n} = {x*n}')
