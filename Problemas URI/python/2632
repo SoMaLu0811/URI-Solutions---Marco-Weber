@@ -1,8 +1,30 @@
+from math import sqrt 
 t=int(input())
-for i in range(t):
-    w,h,x0,y0=map(int,input().split())
-    s,n,cx,cy=input().split()
-    #não terminado
-    
-    
-    
+fire=[200, 20, 30, 50]
+water=[300, 10, 25, 40]
+earth=[400, 25, 55, 70]
+air=[100, 18, 38, 60]
+for i in range(t):w,h,x0,y0=list(map(int,input().split()))
+magia,n,cx,cy=map(int,input().split())
+dano=0
+if magia=='fire':
+    raio=fire[n]
+    d=fire[0]
+elif magia=='water':
+    raio=water[n]
+    d=water[0]
+elif magia=='earth':
+    raio=earth[n]
+    raio=earth[0]
+else:
+    raio=air[n]
+    D=air[0]
+for x in range(w):
+    for y in range(h):
+        dis=sqrt((cx-x0)**2+(cy-y0)**2)
+        if dis<=raio:
+            dano=d
+            break 
+        x0+=1
+        y0+=1
+print(dano)

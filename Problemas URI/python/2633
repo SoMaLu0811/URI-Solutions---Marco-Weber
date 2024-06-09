@@ -1,0 +1,14 @@
+while True:
+    try:
+        n = int(input())
+        total = {}
+        for i in range(n):
+            peca = input().split()
+            total[peca[0]] = int(peca[1])
+
+        #sort do dicionário 
+        total = {k: v for k, v in sorted(total.items(), key=lambda x: x[1])}
+        
+        print(' '.join(total))
+
+    except EOFError:break

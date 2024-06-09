@@ -1,14 +1,13 @@
-x = 1
-n = 1
-lista = [1]
-while n<1500:
-    x+=1
-    for i in range(x,int(x/2),1):
-        if x%2==0 or x%3==0 or x%5==0 and x%i!=0:
-            continue
-        elif x%i==0 and i!=2 or i!=3 or i!=5:
-            lista.append(x)
-            print(x)
-print(lista[:11])
+import time
+def get_feio(n):
+	start = time.time()
+	feios2 = set(2*x for x in range(1, n))
+	feios3 = set(3*x for x in range(1, n))
+	feios5 = set(6*x for x in range(1, n))
+	feios = [1,] + list(feios2.union(feios3, feios5))
+	sorted(feios)
+	print(feios[:11])
+	end = time.time()
+	print(f"Execução: {(end-start)*1000} ms")
 
-        
+get_feio(1500)

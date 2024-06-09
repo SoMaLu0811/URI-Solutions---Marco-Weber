@@ -1,0 +1,22 @@
+b=a=m=d=0
+n=int(input())
+for i in range(n):
+    e,g,h=input().split()
+    h=int(h)
+    if g=='bonecos':
+        b+=h
+    elif g=='arquitetos':
+        a+=h
+    elif g=='musicos':
+        m+=h
+    elif g=='desenhistas':
+        d+=h
+        
+a=int(a)/4
+b=int(b)/4
+d=int(d)/4
+m=int(m)/4
+t=a+b+d+m
+print(t)
+    
+    
